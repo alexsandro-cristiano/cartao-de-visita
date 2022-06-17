@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
 }
 
@@ -22,7 +22,6 @@ body {
 }
 
 main {
-  /* background: #292929; */
   background-image: linear-gradient(to bottom, #1798a1, #0c0c0c);
   width: 100vw;
   height: 100vh;
@@ -44,6 +43,7 @@ main {
   margin-top: 2.4rem;
   font-size: 2.4rem;
   font-weight: 700;
+  padding: 2rem;
 }
 
 #github {
@@ -57,8 +57,14 @@ main {
   height: 1.5rem;
 }
 
-#github p {
-  font-size: 1rem;
+#github a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
 }
 
 #resumo {
@@ -69,7 +75,7 @@ main {
 }
 
 .midias {
-  margin-top: 4.4rem;
+  margin-top: 1rem;
   gap: 2rem;
 }
 
@@ -77,6 +83,23 @@ main {
   border: 1px solid #323238;
   background-color: #323238;
   padding: 0.7rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1e1e20;
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background: #1e1e20c4;
+}
+.box a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -91,16 +114,15 @@ main {
   }
 
   #perfil {
-    padding: 3rem;    
+    padding: 3rem;
   }
 
   .borda {
     background: #1d1c1cbb;
     border: 1px solid #3c3c3db2;
-    margin-top: 5rem;
+    margin-top: 0;
     padding-bottom: 1.5rem;
   }
-  
 }
 
 @media (min-width: 1024px) {
@@ -119,26 +141,25 @@ main {
     font-size: 3rem;
     font-weight: 700;
   }
-  
+
   #github {
     gap: 1.2rem;
     margin-top: 1.6rem;
   }
-  
+
   #github a > img {
     margin: 0;
     width: 2.5rem;
     height: 2.5rem;
   }
-  
-  #github p {
+
+  #github a {
     font-size: 1.6rem;
   }
-  
+
   #resumo {
     text-align: center;
     margin: 3.2rem;
     font-size: 1.7rem;
   }
-  
 }
