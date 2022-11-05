@@ -1,3 +1,11 @@
+:root {
+  --baseBgColorDark: #202020;
+  --baseTextColorDark: #fffffe;
+  --baseBgColorLight: #faeee7;
+  --baseTextColorLight: #25232d;
+  --colorPrimary: #3e00ff;
+  --colorSecondary: #170055;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #251b37;
+  background: var(--baseBgColorDark);
 }
 body,
 button {
@@ -17,10 +25,10 @@ button {
 .card {
   width: 350px;
   height: 190px;
-  background: #eeee;
+  background: var(--baseTextColorDark);
   position: relative;
   border-radius: 20px;
-  box-shadow: 2px 4px 5px #c996cc;
+  box-shadow: 2px 4px 5px var(--colorPrimary);
   transition: 0.5s;
 }
 .card:hover {
@@ -34,7 +42,7 @@ button {
   width: 150px;
   height: 150px;
   border-radius: 20px;
-  box-shadow: 0 2px 5px #2833d3cd;
+  box-shadow: 0 2px 5px var(--colorSecondary);
   overflow: hidden;
   transition: 0.5s;
 }
@@ -108,13 +116,28 @@ button {
   outline: none;
   font-size: 1em;
   font-weight: 500;
-  background: #251b37;
-  color: #eeee;
-
   cursor: pointer;
 }
-.card .content .details .actionBtn a:nth-child(2) {
-  border: 1px solid black;
-  background: none;
-  color: #251b37;
+#btnIn {
+  background: var(--baseBgColorDark);
+  color: var(--baseTextColorDark);
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in;
+}
+#btnIn:hover {
+  background: var(--baseTextColorDark);
+  color: var(--baseBgColorDark);
+  border: 1px solid var(--colorSecondary);
+}
+
+#btnHub {
+  background: var(--baseTextColorDark);
+  transition: all 0.3s ease-in;
+  color: var(--baseBgColorDark);
+  border: 1px solid var(--colorSecondary);
+}
+
+#btnHub:hover {
+  background: var(--baseBgColorDark);
+  color: var(--baseTextColorDark);
 }
